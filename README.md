@@ -4,7 +4,7 @@ Simple overview of use/purpose.
 
 ## Description
 
-Whether you prefer typing or recording your notes, our intuitive platform allows you to effortlessly transform your study materials into interactive flashcards. But that's just the beginning – Study Genius offers advanced features like translation to multiple languages and seamless conversion to Braille, ensuring accessibility and inclusivity for all learners. What's more, signed-in users can even order their customized sets of flashcards into physical copies, making learning both convenient and rewarding.
+Welcome to Study Genius, where learning meets innovation! Our website redefines the traditional flashcard experience, empowering users to elevate their learning journey. With Study Genius, discover a cutting-edge approach to studying that's tailored to your needs. Whether you prefer typing or recording your notes, Study Genius allows you to effortlessly transform your study materials into interactive flashcards. But that's just the beginning – Study Genius offers features like translation to multiple languages and seamless conversion to Braille, ensuring accessibility and inclusivity for all learners. What's more, signed-in users can even order their customized sets of flashcards into physical copies, making learning both convenient and rewarding.
 ### Dependencies
 
 * Windows 10 or later, Safari, Google Chrome, Firefox browswers
@@ -38,9 +38,9 @@ Contributions are welcome! If you'd like to contribute to Study Genius, please f
 
 Contributors names and contact info
 
-Sonny Buenteo - https://github.com/sbuenteo/Sonny-Buenteo.git
-Nakoria Johnson - 
-Ashley Morgan - 
+1. Sonny Buenteo - https://github.com/sbuenteo/Sonny-Buenteo.git
+2. Nakoria Johnson - 
+3. Ashley Morgan - 
 
 ## Features
 
