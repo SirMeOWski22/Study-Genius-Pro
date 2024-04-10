@@ -1,6 +1,5 @@
 # Study-Genius-Pro
 
-Simple overview of use/purpose.
 
 ## Description
 
@@ -10,6 +9,13 @@ Welcome to Study Genius, where learning meets innovation! Our website redefines 
 * Windows 10 or later, Safari, Google Chrome, Firefox browswers
 
 ## Usage
+
+1. Simple Flashcard Creation: Create personalized flashcards effortlessly.
+2. Effective Studying: Enhance study sessions with interactive features.
+3. Accessible Learning: Supports multiple languages and Braille.
+
+## Audience
+
 1. Educators
 2. Students
 3. Parents
@@ -68,16 +74,15 @@ Frontend: HTML, CSS, JavaScript (React.js)
 
 ## Frameworks and APIs used
 
-Bulma CSS Frameworks
+1. Bulma CSS Frameworks
 
-Google Calender API
+2. Google Calender API
 
-Google Cloud Speech-to-Text API
+3. Google Cloud Speech-to-Text API
 
-Google Cloud Translation API
+4. Google Cloud Translation API
 
-Spotify Web API (for integrating music features if needed)
-
+5. Spotify Web API (for integrating music features if needed)
 
 ## Assignment Tasks
 1. Sonny - Landing Page, Bulma CSS Framework (main framework), JavaScript Functions for landing page, Presentation Intro Slides and Elevator pitch
