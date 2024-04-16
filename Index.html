@@ -1,87 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StudyGeniusPro.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Study Genius Pro - Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="StudyGeniusPro.css">
+  <script src="StudyGeniusPro.js"></script>
+
+  <title>Study Genius Pro - Landing Page</title>
 </head>
+
 <body>
 
-<!--Create Navbard with Search -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="">
-      </a>
+  <div class="fixed-grid has-4-cols">
+    <div class="grid">
+      <div class="cell is-col-span-4">
+        <div class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <svg width="1000" height="160" viewBox="0 0 1000 160" fill="none" xlmns="http://www.w3.org/2000/svg">
+                <image width="1000" height="160" href="/Assets/Color logo - no background copy.svg"></image>
+              </svg>
+            </a>
+            <a class="navbar-burger" role="button" class="navbar-burger" data-target="navMenu" aria-label="menu"
+              aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu id=navMenu">
+            <div class="navbar-end">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-item">Home</a>
+                <a class="navbar-link is-arrowless">Subjects</a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">Programming</a>
+                    <a class="navbar-item">Web Development</a>
+                  </div>
+                <a class="navbar-item">About Us</a>
+                <a class="navbar-item">Contact Us</a>
+              </div>
+          </div>
 
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <!-- Adding search bar-->
-
-  <div class="searchbar">
-
-  </div>
-
-    <div class="navbar-end">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Documentation
-      </a>
-
-      <!--Dropdown selection for NavBar-->
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Subjects
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item is-selected">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
-    </div>
-
-<!--Sign Up and Login Buttons-->
-
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
         
-    
+        </div>
+      </div>
+      <div class="cell">Cell 2</div>
+
+
+    </div>
+
 </body>
+
 </html>
