@@ -8,6 +8,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="StudyGeniusPro.css">
+  <script src="https://kit.fontawesome.com/3e36261668.js" crossorigin="anonymous"></script>
   <script src="StudyGeniusPro.js"></script>
 
   <title>Study Genius Pro - Landing Page</title>
@@ -15,10 +16,10 @@
 
 <body>
 <!--Navigation Bar with Search Feature-->
-  <div class="fixed-grid has-4-cols">
+  <header class="fixed-grid has-6-cols">
     <div class="grid">
-      <div class="cell is-col-span-4">
-        <div class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="cell is-col-span-6">
+        <div class="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <a class="navbar-item" href="#">
               <strong>StudyGeniusPro</strong>
@@ -31,25 +32,48 @@
               <span aria-hidden="true"></span>
             </a>
           </div>
+
+    <!--Organizing Navbar elements-->      
           <div class="navbar-menu id=navMenu">
+        
+    <!--Navbar Links and Buttons-->
             <div class="navbar-end">
+
+    <!--Adding search bar-->    
+              <div class="navbar-search">
+                <input class="input is-info is-rounded" type="search" placeholder="Search" />
+              </div>
+    
+    <!--Adding Links-->
               <a class="navbar-item">Home</a>
               <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link is-arrowless">Subjects</a>
-                  <div class="navbar-dropdown">
+                  <div class="navbar-dropdown is-right">
                     <a class="navbar-item">Programming</a>
                     <a class="navbar-item">Web Development</a>
                   </div>
               </div>  
-              <a class="navbar-item">About Us</a>
-              <a class="navbar-item">Contact Us</a>
-            </div>
-          </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link is-arrowless">About Us</a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">Our Story</a>
+                    <a class="navbar-item">Company Info</a>
+                    <a class="navbar-item">Contact Us</a>
+                  </div>
+              </div>
+              <div class="buttons is-info is-light is-outlined are-small">
+                <button class="button is-rounded">Log In</button>
+                 <button class="button is-rounded">Create Account</button>
+
+
+              </div>
+
 
         
         </div>
       </div>
-      <div class="cell">Cell 2</div>
+<!--Main Landing area-->
+
 
 
     </div>
