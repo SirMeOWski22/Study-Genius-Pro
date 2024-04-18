@@ -19,205 +19,232 @@
   <body>
     <!--Navigation Bar with Search Feature-->
     <nav class="navbar">
-          <div class="navbar is-info is-fixed-top" role="navigation">
-            <div class="navbar-brand">
-              <a class="navbar-item is-size-5 has-text-weight-semibold">Study Genius Pro</a>
-              <a class="navbar-burger" role="button" class="navbar-burger"
-                data-target="navMenu" aria-label="menu"
-                aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
+      <div class="navbar is-info is-fixed-top" role="navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item is-size-5 has-text-weight-semibold">Study Genius
+            Pro</a>
+          <a class="navbar-burger" role="button" class="navbar-burger"
+            data-target="navMenu" aria-label="menu"
+            aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <!--Organizing Navbar elements-->
+        <div class="navbar-menu id=navMenu">
+
+          <!--Navbar Links and Buttons-->
+          <div class="navbar-end">
+
+            <!--Adding search bar-->
+            <div class="navbar-search">
+              <p class="control has-icons-left">
+                <input class="input is-rounded" type="search"
+                  placeholder="Search" />
+                <span class="icon is-left">
+                  <i class="fas fa-search"></i>
+                </span>
+              </p>
             </div>
 
-            <!--Organizing Navbar elements-->
-            <div class="navbar-menu id=navMenu">
+            <!--Adding Links-->
+            <a class="navbar-item">Home</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-arrowless">Subjects</a>
+              <div class="navbar-dropdown is-right">
+                <a class="navbar-item">Programming</a>
+                <a class="navbar-item">Web Development</a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link is-arrowless">About Us</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item">Our Story</a>
+                <a class="navbar-item">Company Info</a>
+                <a class="navbar-item">Contact Us</a>
+              </div>
+            </div>
+            <div class="buttons is-info is-light is-outlined are-small">
+              <button class="button is-rounded">Log In</button>
+              <button class="button is-rounded">Create Account</button>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </nav>
+      </div>
+        <!--Main Landing Page-->
+        <section class="hero is-fullheight-with-navbar">
+          <div class="hero-body">
+            <img src="Assets/pexels-ylanite-koppens-2008145.jpg"
+              alt="School-background">
+          </div>
+        </section>
 
-              <!--Navbar Links and Buttons-->
-              <div class="navbar-end">
+        <!--Columns-->
+        <main class="columns is-overlay">
+          <header class="column is-one-third">
+            <div class="card">
+              <div class="card-header is-centered">
+                <p class="card-header-title is-centered">Try For Free
+                  <span class="icon">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                  </span>
+                </p>
+              </div>
+              <p class="flashcards has-background-info">
+                <input class="input my-2 is-rounded is-info" type="text"
+                  placeholder="Question 1...">
+                <input class="input mb-3 is-rounded is-info" type="text"
+                  placeholder="Answer 1...">
+                <input class="input my-2 is-rounded is-info" type="text"
+                  placeholder="Question 2...">
+                <input class="input mb-3 is-rounded is-info" type="text"
+                  placeholder="Answer 2...">
+                <input class="input my-2 is-rounded is-info" type="text"
+                  placeholder="Question 3...">
+                <input class="input mb-3 is-rounded is-info" type="text"
+                  placeholder="Answer 3...">
+              </p>
+              <div
+                class="buttons has-background-info pr-3 py-3 is-info is-small is-right">
+                <button class="button">Create Cards</button>
+              </div>
 
-                <!--Adding search bar-->
-                <div class="navbar-search">
-                  <p class="control has-icons-left">
-                    <input class="input is-rounded" type="search"
-                      placeholder="Search" />
-                    <span class="icon is-left">
-                      <i class="fas fa-search"></i>
+            </div>
+          </header>
+
+          <!--Audience Columns-->
+          <div class="column is-one-third">
+            <header class="card">
+              <div class="card-header">
+                <p class="card-header-title is-centered">Educators
+                  <button class="card-header">
+                    <span class="icon">
+                      <i class="fas fa-school"></i>
                     </span>
-                  </p>
-                </div>
-
-                <!--Adding Links-->
-                <a class="navbar-item">Home</a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link is-arrowless">Subjects</a>
-                  <div class="navbar-dropdown is-right">
-                    <a class="navbar-item">Programming</a>
-                    <a class="navbar-item">Web Development</a>
-                  </div>
-                </div>
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link is-arrowless">About Us</a>
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item">Our Story</a>
-                    <a class="navbar-item">Company Info</a>
-                    <a class="navbar-item">Contact Us</a>
-                  </div>
-                </div>
-                <div class="buttons is-info is-light is-outlined are-small">
-                  <button class="button is-rounded">Log In</button>
-                  <button class="button is-rounded">Create Account</button>
+                  </button>
+                </p>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                  eros.
+                  Donec id elit non mi porta gravida at eget metus. Cum sociis
+                  natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus.
+                  Cras mattis consectetur purus sit amet fermentum.
                 </div>
               </div>
-      </nav>
-          
-  
-<!--Main Landing Page--> 
-    <section class="hero is-fullheight-with-navbar">
-      <div class="hero-body">
-        <img src="/Assets/School-background.jpeg" alt="School-background">
-      </div>
-    </section>
-  
-<!--Columns-->
-    <main class="columns is-overlay">
-      <header class="column is-one-third">
-        <div class="card">
-          <div class="card-header is-centered">
-            <p class="card-header-title is-centered">Try For Free
-              <span class="icon">
-                <i class="fa-solid fa-pen-fancy"></i>
-              </span>
-            </p>
-          </div>
-        <p class="flashcards has-background-info">
-          <input class="input my-2 is-rounded is-info" type="text" placeholder="Question 1">
-          <input class="input mb-3 is-rounded is-info" type="text" placeholder="Answer 1">
-          <input class="input my-2 is-rounded is-info" type="text" placeholder="Question 2">
-          <input class="input mb-3 is-rounded is-info" type="text" placeholder="Answer 2">
-          <input class="input my-2 is-rounded is-info" type="text" placeholder="Question 3">
-          <input class="input mb-3 is-rounded is-info" type="text" placeholder="Answer 3">
-        </p>
-        <div class="buttons has-background-info pr-3 py-3 is-info is-small is-right">
-            <button class="button">Create Cards</button>
-        </div>
-       
-        
+            </header>
 
-        </div>
-      </header>
+            <header class="card">
+              <div class="card-header">
+                <p class="card-header-title is-centered">Parents
+                  <button class="card-header">
+                    <span class="icon">
+                      <i class="fa-solid fa-person"></i>
+                    </span>
+                  </button>
+                </p>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                  eros.
+                  Donec id elit non mi porta gravida at eget metus. Cum sociis
+                  natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus.
+                  Cras mattis consectetur purus sit amet fermentum.
+                </div>
+              </div>
+            </header>
 
-<!--Audience Columns-->
-      <div class="column is-one-third">
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Educators
-              <button class="card-header">
-                <span class="icon">
-                  <i class="fas fa-school"></i>
-                </span>
-              </button>
-            </p>
+            <header class="card">
+              <div class="card-header">
+                <p class="card-header-title is-centered">Students
+                  <button class="card-header">
+                    <span class="icon">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                    </span>
+                  </button>
+                </p>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                  eros.
+                  Donec id elit non mi porta gravida at eget metus. Cum sociis
+                  natoque
+                  penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus.
+                  Cras mattis consectetur purus sit amet fermentum.
+                </div>
+              </div>
+            </header>
           </div>
-          <div class="card-content">
-            <div class="content">
-              Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. 
-              Donec id elit non mi porta gravida at eget metus. Cum sociis natoque 
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-              Cras mattis consectetur purus sit amet fermentum.
-            </div>
-          </div>
-        </header>
-        
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Parents
-              <button class="card-header">
-                <span class="icon">
-                  <i class="fa-solid fa-person"></i>
-                </span>
-              </button>
-            </p>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. 
-              Donec id elit non mi porta gravida at eget metus. Cum sociis natoque 
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-              Cras mattis consectetur purus sit amet fermentum.
-            </div>
-          </div>
-        </header>
 
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Students
-              <button class="card-header">
-                <span class="icon">
-                  <i class="fa-solid fa-graduation-cap"></i>
-                </span>
-              </button>
-            </p>
+          <!--Testimonial Column-->
+          <div class="column is-one-third">
+            <header class="card">
+              <div class="card-header">
+                <p class="card-header-title is-centered">Testimonials
+                  <button class="card-header">
+                    <span class="icon">
+                      <i class="fa-regular fa-message"></i>
+                    </span>
+                  </button>
+                </p>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-size-6">Fun way for my kids to study</p>
+                  <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
+                    at eros.
+                    Donec id elit non mi porta gravida at eget metus. Cum sociis
+                    natoque
+                    penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.
+                    Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-size-6">Best way to Study on the go!!!</p>
+                  <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
+                    at eros.
+                    Donec id elit non mi porta gravida at eget metus. Cum sociis
+                    natoque
+                    penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.
+                    Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-size-6">Best Place to create custom
+                    flashcards</p>
+                  <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
+                    at eros.
+                    Donec id elit non mi porta gravida at eget metus. Cum sociis
+                    natoque
+                    penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.
+                    Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+              </div>
+            </header>
           </div>
-          <div class="card-content">
-            <div class="content">
-              Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. 
-              Donec id elit non mi porta gravida at eget metus. Cum sociis natoque 
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-              Cras mattis consectetur purus sit amet fermentum.
-            </div>
-          </div>
-        </header>
-      </div>
 
-<!--Testimonial Column-->      
-      <div class="column is-one-third">
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Testimonials
-              <button class="card-header">
-                <span class="icon">
-                  <i class="fa-regular fa-message"></i>
-                </span>
-              </button>
-            </p>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <p class="title is-size-6">Fun way for my kids to study</p>
-              <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. 
-              Donec id elit non mi porta gravida at eget metus. Cum sociis natoque 
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-              Cras mattis consectetur purus sit amet fermentum.</p>
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <p class="title is-size-6">Best way to Study on the go!!!</p>
-              <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. 
-              Donec id elit non mi porta gravida at eget metus. Cum sociis natoque 
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-              Cras mattis consectetur purus sit amet fermentum.</p>
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <p class="title is-size-6">Best Place to create custom flashcards</p>
-              <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. 
-              Donec id elit non mi porta gravida at eget metus. Cum sociis natoque 
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-              Cras mattis consectetur purus sit amet fermentum.</p>
-            </div>
-          </div>
-        </header>
-      </div>
-      
-    </main>
-    <footer>
+        </main>
+        <footer>
 
-    </footer>
+        </footer>
 
-  </body>
+      </body>
 </html>
