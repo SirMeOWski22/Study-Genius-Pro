@@ -1,0 +1,28 @@
+* {
+    margin: auto;
+}
+
+
+.navbar-search {
+    margin-top: 5px;
+    padding-right: 30px;
+    width: 500px;
+}
+
+.column  {
+    margin-top: 80px;
+}
+
+.icon {
+    padding-left: 30px;
+}
+
+.message-body
+.message-header {
+    padding: var(--bulma-message-header-padding);
+    padding: var(--bulma-message-body-padding);
+}
+
+.hero-body {
+    position: fixed;
+}
