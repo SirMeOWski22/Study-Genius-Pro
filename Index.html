@@ -6,71 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="StudyGeniusPro.css">
-    <script src="https://kit.fontawesome.com/3e36261668.js"
-      crossorigin="anonymous"></script>
-    <script src="StudyGeniusPro.js"></script>
-
+    <link rel="stylesheet" href="/assets/css/StudyGeniusPro.css">
+    <script src="https://kit.fontawesome.com/3e36261668.js" crossorigin="anonymous"></script>
     <title>Study Genius Pro - Landing Page</title>
   </head>
 
   <body>
     <!--Navigation Bar with Search Feature-->
-    <nav class="navbar">
-      <div class="navbar is-info is-fixed-top" role="navigation">
+    <nav class="navbar" role="navigation" aria-label="main-navigation">
+      <div class="navbar is-info is-fixed-top">
         <div class="navbar-brand">
-          <a class="navbar-item is-size-5 has-text-weight-semibold">Study Genius
-            Pro</a>
-          <a class="navbar-burger" role="button" class="navbar-burger"
-            data-target="navMenu" aria-label="menu"
-            aria-expanded="false">
+          <a class="navbar-item is-size-5 has-text-weight-semibold">Study GeniusPro</a>
+          
+          <a class="navbar-menu-open navbar-burger" role="button" type="button" data-toggle="side-menu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
+        
 
         <!--Organizing Navbar elements-->
-        <div class="navbar-menu id=navMenu">
-
-          <!--Navbar Links and Buttons-->
-          <div class="navbar-end">
+        <div class="navbar-menu navbar-end">
 
             <!--Adding search bar-->
-            <div class="navbar-search">
-              <p class="control has-icons-left">
-                <input class="input is-rounded" type="search"
-                  placeholder="Search" />
+          <div class="navbar-search">
+            <p class="control has-icons-left">
+              <input class="input is-rounded" type="search"
+                  placeholder="    Search    " />
                 <span class="icon is-left">
                   <i class="fas fa-search"></i>
                 </span>
-              </p>
-            </div>
+            </p>
+          </div>
 
             <!--Adding Links-->
-            <a class="navbar-item">Home</a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link is-arrowless">Subjects</a>
+          <a class="navbar-item">Home</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-arrowless">Subjects</a>
               <div class="navbar-dropdown is-right">
                 <a class="navbar-item">Programming</a>
                 <a class="navbar-item">Web Development</a>
               </div>
-            </div>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link is-arrowless">About Us</a>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-arrowless">About Us</a>
               <div class="navbar-dropdown">
                 <a class="navbar-item">Our Story</a>
                 <a class="navbar-item">Company Info</a>
                 <a class="navbar-item">Contact Us</a>
               </div>
-            </div>
-            <div class="buttons is-info is-light is-outlined are-small">
-              <button class="button is-rounded">Log In</button>
-              <button class="button is-rounded">Create Account</button>
-            </div>
+          </div>
+          <div class="buttons is-hidden-mobile is-info is-light is-outlined are-small">
+            <button class="button is-rounded">Log In</button>
+            <button class="button is-rounded">Create Account</button>
           </div>
         </div>
       </div>
@@ -78,185 +68,189 @@
 
     <!--Main Landing Page-->
     <!--Background Image-->
-    <section class="hero is-fullheight-with-navbar">
-      <div class="hero-body">
-        <img src="Assets/pexels-ylanite-koppens-2008145.jpg"
-          alt="School-background">
-      </div>
-    </section>
+    <figure class="image is-16by9">
+      <img src="/Assets/pexels-ylanite-koppens-2008145.jpg">
 
-    <!--Columns-->
-    <main class="columns is-overlay">
-      <header class="column is-one-third">
-        <div class="card">
-          <div class="card-header is-centered">
-            <p class="card-header-title is-centered">Try For Free
-              <span class="icon">
-                <i class="fa-solid fa-pen-fancy"></i>
-              </span>
-            </p>
-          </div>
-          <p class="flashcards has-background-info">
-            <input class="input my-2 is-rounded is-info" type="text"
-              placeholder="Question 1...">
-            <input class="input mb-3 is-rounded is-info" type="text"
-              placeholder="Answer 1...">
-            <input class="input my-2 is-rounded is-info" type="text"
-              placeholder="Question 2...">
-            <input class="input mb-3 is-rounded is-info" type="text"
-              placeholder="Answer 2...">
-            <input class="input my-2 is-rounded is-info" type="text"
-              placeholder="Question 3...">
-            <input class="input mb-3 is-rounded is-info" type="text"
-              placeholder="Answer 3...">
-          </p>
-          <div
-            class="buttons has-background-info pr-3 py-3 is-info is-small is-right">
-            <button class="button">Create Cards</button>
-          </div>
-
-        </div>
-      </header>
-
-      <!--Audience Columns-->
-      <div class="column is-one-third">
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Educators
-              <button class="card-header">
+      <!--Adding Columns-->
+      <!--Try It Free Column-->
+      <main class="columns">
+        <header class="column is-one-third">
+          <div class="card">
+            <div class="card-header">
+              <p class="card-header-title is-centered">Try For Free
                 <span class="icon">
-                  <i class="fas fa-school"></i>
+                  <i class="fa-solid fa-pen-fancy"></i>
                 </span>
-              </button>
-            </p>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
-              eros.
-              Donec id elit non mi porta gravida at eget metus. Cum sociis
-              natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-              mus.
-              Cras mattis consectetur purus sit amet fermentum.
-            </div>
-          </div>
-        </header>
-
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Parents
-              <button class="card-header">
-                <span class="icon">
-                  <i class="fa-solid fa-person"></i>
-                </span>
-              </button>
-            </p>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
-              eros.
-              Donec id elit non mi porta gravida at eget metus. Cum sociis
-              natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-              mus.
-              Cras mattis consectetur purus sit amet fermentum.
-            </div>
-          </div>
-        </header>
-
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Students
-              <button class="card-header">
-                <span class="icon">
-                  <i class="fa-solid fa-graduation-cap"></i>
-                </span>
-              </button>
-            </p>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
-              eros.
-              Donec id elit non mi porta gravida at eget metus. Cum sociis
-              natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-              mus.
-              Cras mattis consectetur purus sit amet fermentum.
-            </div>
-          </div>
-        </header>
-      </div>
-
-      <!--Testimonial Messages-->
-      <!--Testimonial 1-->
-      <div class="column is-one-third">
-        <header class="card">
-          <div class="card-header">
-            <p class="card-header-title is-centered">Testimonials
-              <button class="card-header">
-                <span class="icon">
-                  <i class="fa-regular fa-message"></i>
-                </span>
-              </button>
-            </p>
-          </div>
-          <article class="message is-info">
-            <div class="message-header">
-              <p class="message">Fun way for my kids to study</p>
-            </div>
-            <div class="message-body">
-              <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
-                at eros.
-                Donec id elit non mi porta gravida at eget metus. Cum sociis
-                natoque
-                penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus.
-                Cras mattis consectetur purus sit amet fermentum.
               </p>
             </div>
-          </article>
-
-          <!--Testimonial 2-->
-          <article class="message is-info">
-            <div class="message-header">
-              <p class="message">Best way to Study on the go!!!</p>
+            <p class="flashcards has-background-info">
+              <input class="input my-2 is-rounded is-info" type="text"
+                placeholder="Question 1...">
+              <input class="input mb-3 is-rounded is-info" type="text"
+                placeholder="Answer 1...">
+              <input class="input my-2 is-rounded is-info" type="text"
+                placeholder="Question 2...">
+              <input class="input mb-3 is-rounded is-info" type="text"
+                placeholder="Answer 2...">
+              <input class="input my-2 is-rounded is-info" type="text"
+                placeholder="Question 3...">
+              <input class="input mb-3 is-rounded is-info" type="text"
+                placeholder="Answer 3...">
+            </p>
+            <div class="buttons is-right has-background-info pr-3 py-3">
+              <p class="control">
+                <button class="button">Create Cards</button>
+              </p>
+              <p class="control">
+                <button class="button is-right">Cancel</button>
+              </p>
             </div>
-            <div class="message-body">
-              <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
-                at eros.
-                Donec id elit non mi porta gravida at eget metus. Cum sociis
-                natoque
-                penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus.
-                Cras mattis consectetur purus sit amet fermentum.</p>
-            </div>
-          </article>
-
-          <!--Testimonial 3-->
-          <article class="message is-info">
-            <div class="message-header">
-              <p class="message">Best Place to create custom flashcards</p>
-            </div>
-            <div class="message-body">
-              <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
-                at eros.
-                Donec id elit non mi porta gravida at eget metus. Cum sociis
-                natoque
-                penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus.
-                Cras mattis consectetur purus sit amet fermentum.</p>
-            </div>
-          </article>
+          </div>
         </header>
-      </div>
-    </main>
+        <!--Audience Columns-->
+        <div class="column is-one-third">
+          <header class="card">
+            <div class="card-header">
+              <p class="card-header-title is-centered">Educators
+                <button class="card-header">
+                  <span class="icon">
+                    <i class="fas fa-school"></i>
+                  </span>
+                </button>
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                eros.
+                Donec id elit non mi porta gravida at eget metus. Cum sociis
+                natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+                Cras mattis consectetur purus sit amet fermentum.
+              </div>
+            </div>
+          </header>
+
+          <header class="card">
+            <div class="card-header">
+              <p class="card-header-title is-centered">Parents
+                <button class="card-header">
+                  <span class="icon">
+                    <i class="fa-solid fa-person"></i>
+                  </span>
+                </button>
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                eros.
+                Donec id elit non mi porta gravida at eget metus. Cum sociis
+                natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+                Cras mattis consectetur purus sit amet fermentum.
+              </div>
+            </div>
+          </header>
+
+          <header class="card">
+            <div class="card-header">
+              <p class="card-header-title is-centered">Students
+                <button class="card-header">
+                  <span class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </span>
+                </button>
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                eros.
+                Donec id elit non mi porta gravida at eget metus. Cum sociis
+                natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+                Cras mattis consectetur purus sit amet fermentum.
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <!--Testimonial Messages-->
+        <!--Testimonial 1-->
+        <div class="column is-one-third">
+          <header class="card">
+            <div class="card-header">
+              <p class="card-header-title is-centered">Testimonials
+                <button class="card-header">
+                  <span class="icon">
+                    <i class="fa-regular fa-message"></i>
+                  </span>
+                </button>
+              </p>
+            </div>
+            <article class="message is-info">
+              <div class="message-header">
+                <p class="message">Fun way for my kids to study</p>
+              </div>
+              <div class="message-body">
+                <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
+                  at eros.
+                  Donec id elit non mi porta gravida at eget metus. Cum sociis
+                  natoque
+                  penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.
+                  Cras mattis consectetur purus sit amet fermentum.
+                </p>
+              </div>
+            </article>
+
+            <!--Testimonial 2-->
+            <article class="message is-info">
+              <div class="message-header">
+                <p class="message">Best way to Study on the go!!!</p>
+              </div>
+              <div class="message-body">
+                <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
+                  at eros.
+                  Donec id elit non mi porta gravida at eget metus. Cum sociis
+                  natoque
+                  penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.
+                  Cras mattis consectetur purus sit amet fermentum.</p>
+              </div>
+            </article>
+
+            <!--Testimonial 3-->
+            <article class="message is-info">
+              <div class="message-header">
+                <p class="message">Best Place to create custom flashcards</p>
+              </div>
+              <div class="message-body">
+                <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum
+                  at eros.
+                  Donec id elit non mi porta gravida at eget metus. Cum sociis
+                  natoque
+                  penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.
+                  Cras mattis consectetur purus sit amet fermentum.</p>
+              </div>
+            </article>
+          </header>
+        </div>
+      </main>
+    </figure>
+    
+    
+
+    <!--Footer-->
     <footer class="footer">
       <div class="content">
-        <div class="columns is-gapless">
-          <div class="column is-one-third">
+        <div class="columns pt-2">
+          <div class="column">
             <h4>About Us</h4>
             <ul>
               <li><a href="#">About StudyGeniusPro</a></li>
@@ -272,7 +266,7 @@
               <li><a href="#">Help center</a></li>
               <li><a href="#">Sign up</a></li>
               <li><a href="#">Honor code</a></li>
-              <li><a href="#">Community guidelines</a></li>
+              <li><a href="#">Community Guidelines</a></li>
               <li><a href="#">Privacy</a></li>
               <li class="is-hidden-mobile"><a href="#">Terms</a></li>
               <li class="is-hidden-mobile"><a href="#">Ad and Cookie
@@ -295,6 +289,6 @@
         <strong>StudyGeniusPro</strong> by TEAM 5
       </p>
     </footer>
-
+    
   </body>
 </html>
