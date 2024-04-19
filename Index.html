@@ -8,27 +8,21 @@
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <link rel="stylesheet" href="/assets/css/StudyGeniusPro.css">
     <script src="https://kit.fontawesome.com/3e36261668.js" crossorigin="anonymous"></script>
+    
     <title>Study Genius Pro - Landing Page</title>
   </head>
 
   <body>
     <!--Navigation Bar with Search Feature-->
     <nav class="navbar" role="navigation" aria-label="main-navigation">
-      <div class="navbar is-info is-fixed-top">
+      <div class="navbar is-info">
         <div class="navbar-brand">
-          <a class="navbar-item is-size-5 has-text-weight-semibold">Study GeniusPro</a>
-          
-          <a class="navbar-menu-open navbar-burger" role="button" type="button" data-toggle="side-menu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+          <a class="navbar-item is-size-5 has-text-weight-semibold">Study Genius Pro</a>
         </div>
         
 
         <!--Organizing Navbar elements-->
-        <div class="navbar-menu navbar-end">
+        <div class="navbar-menu is-active navbar-end">
 
             <!--Adding search bar-->
           <div class="navbar-search">
@@ -44,11 +38,11 @@
             <!--Adding Links-->
           <a class="navbar-item">Home</a>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless">Subjects</a>
-              <div class="navbar-dropdown is-right">
-                <a class="navbar-item">Programming</a>
-                <a class="navbar-item">Web Development</a>
-              </div>
+              <a class="navbar-link is-arrowless">Subjects</a>
+                <div class="navbar-dropdown is-active is-right">
+                  <a class="navbar-item">Programming</a>
+                  <a class="navbar-item">Web Development</a>
+                </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link is-arrowless">About Us</a>
@@ -58,7 +52,7 @@
                 <a class="navbar-item">Contact Us</a>
               </div>
           </div>
-          <div class="buttons is-hidden-mobile is-info is-light is-outlined are-small">
+          <div class="buttons is-info is-light is-outlined are-small">
             <button class="button is-rounded">Log In</button>
             <button class="button is-rounded">Create Account</button>
           </div>
@@ -99,10 +93,10 @@
             </p>
             <div class="buttons is-right has-background-info pr-3 py-3">
               <p class="control">
-                <button class="button">Create Cards</button>
+                <button onclick="createCardBox()" class="button">Create Cards</button>
               </p>
               <p class="control">
-                <button class="button is-right">Cancel</button>
+                <button onclick="cancelCardBox()" class="button">Cancel</button>
               </p>
             </div>
           </div>
