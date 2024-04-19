@@ -1,25 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>APIs and JavaScript Testing</title>
-    <link rel="stylesheet" href="/Study-Genius-Pro/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="\Study-Genius-Pro\css\styles.css" />
+    <title>StudyGeniusPro</title>
+    <script src="/Study-Genius-Pro/js/scripts.js" type="module"></script>
   </head>
-
   <body>
-    <div class="wrapper">
-      <h1>Text-to-Speech App</h1>
-      <h5>FIRST API (JavaScript Based)</h5>
-      <form id="form">
-        <input type="text" id="text-input" placeholder="Enter Text" />
-        <button type="submit" id="submit-button">Submit</button>
-      </form>
-    </div>
-    <br /><br />
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <strong>StudyGeniusPro</strong>
+        </a>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="button is-primary is-outlined" href="#">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span>Sign in / Sign up</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#"> Home </a>
+          <a class="navbar-item" href="#"> Create Cards </a>
+          <a class="navbar-item" href="#"> Settings </a>
+        </div>
+      </div>
+    </nav>
 
-    <h2>Quiz API</h2>
-    <h5>SECOND API (TBD)</h5>
-    <script src="/Study-Genius-Pro/js/scripts.js"></script>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <!-- Form Section -->
+          <div class="column is-half">
+            <form action="">
+              <input type="hidden" id="hidden_token" />
+              <div class="field is-horizontal">
+                <!-- Genre -->
+                <div class="field-label is-normal">
+                  <label for="Genre" class="label">Genre:</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select name="" id="select_genre">
+                          <option>Select...</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Playlists -->
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label for="Playlist" class="label">Playlists:</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select name="" id="select_playlist">
+                          <option>Select...</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Search Button -->
+              <div class="field">
+                <div class="control">
+                  <button type="submit" id="btn_submit" class="button is-success is-fullwidth">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <!-- Study Genius Section -->
+          <div class="column is-half">
+            <h1 class="has-text-centered title">Welcome to StudyGeniusPro</h1>
+            <p class="has-text-centered subtitle">Your ultimate study companion</p>
+            <div class="card study-card" onclick="flipCard()">
+              <div class="card-content">
+                <!-- Front side content -->
+                <div class="content front" id="studyContent">
+                  <!-- Share social media icons -->
+                  <div class="social-media-icons">
+                    <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <textarea class="textarea" placeholder="Type question here"></textarea>
+                </div>
+                <!-- Back side content -->
+                <div class="content back">
+                  <!-- Back side content here -->
+                  <div class="social-media-icons">
+                    <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <textarea class="textarea" placeholder="Type question here"></textarea>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <!-- Braille button with braille icon -->
+                <a href="#" class="braille-button card-footer-item"><i class="fas fa-braille"></i></a>
+                <!-- Record button with microphone icon -->
+                <script>
+                  function textToSpeech() {}
+                </script>
+                <button class="speak-button card-footer-item" id="speak-button" onclick="textToSpeech()">
+                  <i class="fas fa-assistive-listening-systems"></i>
+                </button>
+                <!-- Flip button -->
+                <button class="flip-button card-footer-item" onclick="flipCard()">
+                  <i class="fa-solid fa-rotate"></i> Flip
+                </button>
+              </footer>
+            </div>
+            <!-- Language button -->
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>Change Text Language</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">English</a>
+                  <a href="#" class="dropdown-item">Spanish</a>
+                  <!-- Add more language options here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content">
+        <div class="columns is-gapless">
+          <div class="column is-one-third">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">About StudyGeniusPro</a></li>
+              <li><a href="#">How StudyGeniusPro works</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Advertise with us</a></li>
+              <li><a href="#">Download the app</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Honor code</a></li>
+              <li><a href="#">Community guidelines</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li class="is-hidden-mobile"><a href="#">Terms</a></li>
+              <li class="is-hidden-mobile"><a href="#">Ad and Cookie Policy</a></li>
+              <li class="is-hidden-mobile"><a href="#">StudyGeniusPro for Schools</a></li>
+            </ul>
+          </div>
+          <div class="column is-hidden-tablet">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Ad and Cookie Policy</a></li>
+              <li><a href="#">StudyGeniusPro for Schools</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="has-text-centered"><strong>StudyGeniusPro</strong> by TEAM 5</p>
+    </footer>
   </body>
 </html>
