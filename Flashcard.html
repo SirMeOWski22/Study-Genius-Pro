@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="\Study-Genius-Pro\css\styles.css" />
     <title>StudyGeniusPro</title>
+    <script src="/Study-Genius-Pro/js/scripts.js" type="module"></script>
   </head>
   <body>
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
@@ -35,28 +37,89 @@
 
     <section class="section">
       <div class="container">
-        <h1 class="has-text-centered title">Welcome to StudyGeniusPro</h1>
-        <p class="has-text-centered subtitle">Your ultimate study companion</p>
-        <div class="column is-three-fifths is-offset-one-fifth">
-          <div class="column">
-            <div class="card">
+        <div class="columns is-centered">
+          <!-- Form Section -->
+          <div class="column is-half">
+            <form action="">
+              <input type="hidden" id="hidden_token" />
+              <div class="field is-horizontal">
+                <!-- Genre -->
+                <div class="field-label is-normal">
+                  <label for="Genre" class="label">Genre:</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select name="" id="select_genre">
+                          <option>Select...</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Playlists -->
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label for="Playlist" class="label">Playlists:</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select name="" id="select_playlist">
+                          <option>Select...</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Search Button -->
+              <div class="field">
+                <div class="control">
+                  <button type="submit" id="btn_submit" class="button is-success is-fullwidth">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <!-- Study Genius Section -->
+          <div class="column is-half">
+            <h1 class="has-text-centered title">Welcome to StudyGeniusPro</h1>
+            <p class="has-text-centered subtitle">Your ultimate study companion</p>
+            <div class="card study-card" onclick="flipCard()">
               <div class="card-content">
-                <div class="content" id="studyContent">
+                <!-- Front side content -->
+                <div class="content front" id="studyContent">
                   <!-- Share social media icons -->
                   <div class="social-media-icons">
                     <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <!-- Add more social media icons as needed -->
                   </div>
-                  <textarea class="textarea" placeholder="Type your text here"></textarea>
+                  <textarea class="textarea" placeholder="Type question here"></textarea>
+                </div>
+                <!-- Back side content -->
+                <div class="content back">
+                  <!-- Back side content here -->
                 </div>
               </div>
               <footer class="card-footer">
                 <!-- Braille button with braille icon -->
                 <a href="#" class="braille-button card-footer-item"><i class="fas fa-braille"></i></a>
                 <!-- Record button with microphone icon -->
-                <button class="record-button card-footer-item" onclick="textToSpeech()">
+                <script>
+                  function textToSpeech() {}
+                </script>
+                <button class="speak-button card-footer-item" id="speak-button" onclick="textToSpeech()">
                   <i class="fas fa-assistive-listening-systems"></i>
                 </button>
                 <!-- Flip button -->
@@ -65,7 +128,7 @@
                 </button>
               </footer>
             </div>
-            <!-- Change Language dropdown menu -->
+            <!-- Language button -->
             <div class="dropdown is-hoverable">
               <div class="dropdown-trigger">
                 <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -82,41 +145,6 @@
                   <!-- Add more language options here -->
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <!-- Google Calendar Sync Box -->
-            <div class="advertisement-box">
-              <span class="icon has-text-primary is-large">
-                <i class="fas fa-calendar-alt fa-3x"></i>
-              </span>
-              <p class="advertisement-title is-hidden">Google Calendar Sync</p>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <!-- Spotify API Song Play Box -->
-            <div class="advertisement-box">
-              <span class="icon has-text-success is-large">
-                <i class="fab fa-spotify fa-3x"></i>
-              </span>
-              <p class="advertisement-title is-hidden">Spotify Song Play</p>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <!-- Sidebar for advertisement -->
-            <div class="advertisement-sidebar">
-              <p>Advertisement Content Here</p>
             </div>
           </div>
         </div>
@@ -161,23 +189,5 @@
       </div>
       <p class="has-text-centered"><strong>StudyGeniusPro</strong> by TEAM 5</p>
     </footer>
-
-    <!-- Script tag if you need to add JavaScript -->
-    <script>
-      const textInput = document.querySelector('.textarea');
-      const studyContent = document.querySelector('#studyContent');
-      const utterThis = new SpeechSynthesisUtterance();
-      const synth = window.speechSynthesis; // Corrected variable name
-      let speakText = '';
-      const recordButton = document.querySelector('.record-button');
-      recordButton.addEventListener('click', textToSpeech);
-
-      function textToSpeech() {
-        speakText = textInput.value;
-        utterThis.text = speakText;
-        synth.speak(utterThis); // Corrected method call
-        textInput.value = '';
-      }
-    </script>
   </body>
 </html>
